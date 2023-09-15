@@ -17,7 +17,7 @@ public class DatosGenerales {
         this.listUsuarios = new ListUsuarios();
         this.listClases = new ListUsuarios();
         this.listAlumnos = new ListUsuarios();
-        
+        // datos generales.
     }
     
 }
