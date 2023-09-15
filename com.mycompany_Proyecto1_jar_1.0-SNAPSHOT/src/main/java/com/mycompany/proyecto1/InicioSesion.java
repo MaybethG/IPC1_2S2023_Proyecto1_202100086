@@ -4,13 +4,15 @@
  */
 package com.mycompany.proyecto1;
 
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 
 /**
  *
  * @author Fati
  */
 public class InicioSesion extends javax.swing.JFrame {
+    //String admin="admin";
+    //String pass="admin";
 
     /**
      * Creates new form InicioSesion
@@ -18,10 +20,7 @@ public class InicioSesion extends javax.swing.JFrame {
     public InicioSesion() {
         initComponents();
     }
-    
-    public void recibirDatos (DatosGenerales datosgenerales){
-        
-    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -30,13 +29,6 @@ public class InicioSesion extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     
-    public void InicioSesion(){
-        String codigo=txtcodigo.getText();
-
-       
-        
-        
-    }
     
     
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -141,10 +133,15 @@ public class InicioSesion extends javax.swing.JFrame {
 
     private void btnInicioSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioSesionActionPerformed
         // TODO add your handling code here:
-        String codigo=txtcodigo.getText();
-        String contraseña=txtcontraseña.getText();
+        //String codigo=txtcodigo.getText();
+        //String contraseña=txtcontraseña.getText();
         
-        JOptionPane.showMessageDialog(null,"Inicio valido");
+        //JOptionPane.showMessageDialog(null,"Inicio valido");
+        
+        Administracion newframe = new Administracion();
+        newframe.setVisible(true);
+        this.dispose();
+        
     }//GEN-LAST:event_btnInicioSesionActionPerformed
 
     /**
@@ -191,4 +188,5 @@ public class InicioSesion extends javax.swing.JFrame {
     private javax.swing.JTextField txtcodigo;
     private javax.swing.JTextField txtcontraseña;
     // End of variables declaration//GEN-END:variables
+
 }
