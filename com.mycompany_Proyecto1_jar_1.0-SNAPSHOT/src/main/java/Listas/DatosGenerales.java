@@ -15,8 +15,8 @@ public class DatosGenerales {
     
     public DatosGenerales(){
         this.listUsuarios = new ListUsuarios();
-        this.listClases = new ListUsuarios();
-        this.listAlumnos = new ListUsuarios();
+        this.listClases = new ListClases();
+        this.listAlumnos = new ListAlumnos();
         // datos generales.
     }
     
