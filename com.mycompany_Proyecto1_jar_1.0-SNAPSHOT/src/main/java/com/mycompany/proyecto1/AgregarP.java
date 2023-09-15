@@ -196,14 +196,11 @@ public class AgregarP extends javax.swing.JFrame {
         if (contraseña.equals("")) incompleto += "Campo Contraseña es obligatorio";
     
         if(!incompleto.equals("")) Indicador("Incompleto");
-        else almacenInfo ();
+
         
     }
     
-    public void almacenInfo(){
-       DatosGenerales.listUsuarios.agregarUsuarios(codigo,nombre,apellido); 
-       
-    }
+
     
     private void Indicador(String msj){
         JOptionPane.showMessageDialog(null, msj);
