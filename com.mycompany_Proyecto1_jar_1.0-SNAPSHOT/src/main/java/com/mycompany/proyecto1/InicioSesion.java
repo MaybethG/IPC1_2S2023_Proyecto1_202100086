@@ -4,7 +4,7 @@
  */
 package com.mycompany.proyecto1;
 
-//import javax.swing.JOptionPane;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -133,14 +133,21 @@ public class InicioSesion extends javax.swing.JFrame {
 
     private void btnInicioSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioSesionActionPerformed
         // TODO add your handling code here:
-        //String codigo=txtcodigo.getText();
-        //String contraseña=txtcontraseña.getText();
+        String codigo=txtcodigo.getText();
+        String contraseña=txtcontraseña.getText();
         
         //JOptionPane.showMessageDialog(null,"Inicio valido");
-        
+        if (codigo=="admin") {
         Administracion newframe = new Administracion();
         newframe.setVisible(true);
-        this.dispose();
+        
+        }
+        else{
+            JOptionPane.showMessageDialog(null,"error");
+        }
+        
+        
+        
         
     }//GEN-LAST:event_btnInicioSesionActionPerformed
 
