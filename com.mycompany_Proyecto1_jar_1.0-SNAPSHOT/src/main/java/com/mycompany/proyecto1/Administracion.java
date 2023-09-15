@@ -28,9 +28,9 @@ public class Administracion extends javax.swing.JFrame {
 
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel4 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
+        btncrearp = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnactualizarp = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
@@ -47,11 +47,16 @@ public class Administracion extends javax.swing.JFrame {
 
         jTabbedPane2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        jButton3.setText("Crear");
+        btncrearp.setText("Crear");
+        btncrearp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncrearpActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Carga Masiva");
 
-        jButton5.setText("Actualizar");
+        btnactualizarp.setText("Actualizar");
 
         jButton6.setText("Eliminar");
 
@@ -67,10 +72,10 @@ public class Administracion extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                                .addComponent(jButton3)
+                                .addComponent(btncrearp)
                                 .addGap(41, 41, 41))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnactualizarp, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(30, 30, 30)))
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton4)
@@ -87,11 +92,11 @@ public class Administracion extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
+                    .addComponent(btncrearp)
                     .addComponent(jButton4))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5)
+                    .addComponent(btnactualizarp)
                     .addComponent(jButton6))
                 .addGap(18, 18, 18)
                 .addComponent(jButton7)
@@ -193,6 +198,12 @@ public class Administracion extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btncrearpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncrearpActionPerformed
+        // TODO add your handling code here:
+        Administracion newframe = new Administracion();
+        newframe.setVisible(true);
+    }//GEN-LAST:event_btncrearpActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -229,14 +240,14 @@ public class Administracion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnactualizarp;
+    private javax.swing.JButton btncrearp;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
